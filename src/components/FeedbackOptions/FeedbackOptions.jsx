@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { Container, Item, Button } from './FeedbackOptions.styled';
-import { formatToUpperCaseFirstChar } from 'utils/formatToUpperCaseFirstChar';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -8,7 +7,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       {options.map(type => (
         <Item key={type}>
           <Button type="button" onClick={() => onLeaveFeedback(type)}>
-            {formatToUpperCaseFirstChar(type)}
+            {type}
           </Button>
         </Item>
       ))}

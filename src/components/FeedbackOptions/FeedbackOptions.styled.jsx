@@ -16,6 +16,7 @@ export const Button = styled.button`
   background-color: var(--color-white);
   color: var(--color-primary-bg);
   font-size: 22px;
+  text-transform: capitalize;
   border: 2px solid var(--color-secondary-bg);
   border-radius: 10px;
   padding: 4px 15px;
